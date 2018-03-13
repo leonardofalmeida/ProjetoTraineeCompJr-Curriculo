@@ -1,0 +1,418 @@
+/*Seletor geral para tirar as margens de todas tags */
+*{
+	padding: 0px; 
+	margin: 0px;
+}
+
+
+/*Serve para tirar as bolinhas das listas do tipo ul */
+ul
+{
+	list-style-type: none;
+}
+
+li
+{
+	padding: 1%;
+}
+
+
+/*Fontes*/
+p
+{
+	font-family: 'Press Start 2P', cursive;
+	color: #000000;
+} 
+
+h1
+{
+	font-family: 'Press Start 2P', cursive;
+	color: #000000;
+}
+
+/*Alinha os blocos amarelos*/
+header
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+html, body 
+{ 
+	margin: 0; 
+	height: 100%;
+}
+
+
+ /*Margens dos blocos amarelos*/
+.img-card
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.img-card:hover
+{
+	border: 3px solid white;
+	transition-duration: 0.2s;
+}
+
+/*Container das divs*/
+.container
+{
+	padding-bottom: 50px;
+	padding-top: 50px;
+	width: 95%;
+}
+
+#C7, #C5, #C4
+{
+	height: 100%;
+}
+
+/*Dimensionamento de todos backgrounds*/
+.background-secao
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/*Formatação do texto do balão da segunda tela*/
+#texto
+{
+	position: absolute;
+	margin-top: -30em;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+/*Formatação do texto da tela final no retangulo*/
+#texto-final
+{
+	position: absolute;
+	margin-top: -15em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*Redimensiona o balão de fala da segunda tela*/
+.balao
+{
+	width: auto;
+	height: 100%;
+}
+
+
+/*Dimensionamento das imagens "bowser" */
+.bowser
+{
+	width: 7%;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+
+/*Dimensiona a imagem "Leo" */
+.leo
+{
+	margin-left: 150px;
+	padding-bottom: 30px;
+	width: 20%;
+	height: auto;
+}
+
+
+/*Cores letras titulo da Home*/
+.red 
+{
+	color:red;
+}
+.blue
+{
+	color:blue;
+}
+.green
+{
+	color:lime;
+}
+.yellow 
+{
+	color:yellow;
+}
+
+
+/* Define como ficarão os cards, as fontes e o tamanho das imagens em cada tela*/
+@media (max-width: 320px)
+{
+	p
+	{
+		font-size: 10px;
+	}
+
+	h1
+	{
+		font-size: 15px;
+	}
+
+	#texto
+	{
+		font-size: 8px;
+		margin-top: -61em;
+	}
+
+	#texto-final
+	{
+		position: absolute;
+		margin-top: -32em;
+		font-size: 13px;
+		width: 90%;
+		word-wrap: break-word;
+	}
+
+	.leo
+	{
+		margin-left: 15px;
+		width: 32%;
+	}
+
+	.bowser
+	{
+		width: 30%;
+		height: auto;
+	}
+}
+@media (min-width: 320px) and (max-width: 400px)
+{
+	p
+	{
+		font-size: 12px;
+	}
+
+	h1
+	{
+		font-size: 20px;
+	}
+
+	#texto
+	{
+		font-size: 9px;
+		margin-top: -55em;
+	}
+
+	#texto-final
+	{
+		position: absolute;
+		margin-top: -30em;
+		font-size: 12px;
+		width: 90%;
+		word-wrap: break-word;
+	}
+
+	#titulo-home
+	{
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+
+	.leo
+	{
+		margin-left: 23px;
+		width: 32%;
+	}
+
+	.bowser
+	{
+		width: 25%;
+		height: auto;
+	}
+}
+
+@media (min-width: 400px) and (max-width: 600px)
+{
+	p
+	{
+		font-size: 14px;
+	}
+
+	h1
+	{
+		font-size: 25px;
+	}
+
+	#texto
+	{
+		font-size: 10px;
+		margin-top: -49em;
+	}
+
+	#texto-final
+	{
+		position: absolute;
+		margin-top: -30em;
+		font-size: 13px;
+		width: 90%;
+		word-wrap: break-word;
+	}
+
+	#titulo-home
+	{
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+
+
+	.leo
+	{
+		margin-left: 50px;
+		width: 30%;
+	}
+
+	.bowser
+	{
+		width: 20%;
+		height: auto;
+	}
+
+	.img-card
+	{
+		min-width: 100px;
+		width: 90%;
+		height: auto;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 750px)
+{
+	#texto
+	{
+		font-size: 12px;
+		margin-top: -40em;
+	}
+
+	#texto-final
+	{
+		position: absolute;
+		margin-top: -27em;
+		font-size: 14px;
+		padding-right: 50px;
+	}
+
+	.bowser
+	{
+		width: 17%;
+		height: auto;
+	}
+
+	.img-card
+	{
+		width: 70%;
+		height: auto;
+	}
+}
+
+@media (min-width: 750px) and (max-width: 1000px)
+{
+	#texto
+	{
+		font-size: 14px;
+		margin-top: -35em;
+	}
+
+	#texto-final
+	{
+		position: absolute;
+		margin-top: -23em;
+		font-size: 17px;
+		margin-left: 25px;
+		margin-right: 75px;
+	}
+
+	.bowser
+	{
+		width: 15%;
+		height: auto;
+	}
+
+	.img-card
+	{
+		width: 60%;
+		height: auto;
+	}
+}
+
+@media (min-width: 1000px) and (max-width: 1200px)
+{
+	#texto
+	{
+		font-size: 16px;
+		margin-top: -30em;
+	}
+
+	#texto-final
+	{
+		position: absolute;
+		margin-top: -21em;
+		font-size: 20px;
+		margin-left: 100px;
+		margin-right: 150px;
+	}
+
+	.bowser
+	{
+		width: 10%;
+		height: auto;
+	}
+
+	.img-card
+	{
+		width: 60%;
+		height: auto;
+	}
+}
+
+@media (min-width: 1200px)
+{
+	p
+	{
+		font-size: 20px;
+	}
+
+	h1
+	{
+		font-size: 30px;
+	}
+
+	#texto
+	{
+		font-size: 18px;
+		margin-top: -27em;
+		padding-left: 55px;
+		padding-right: 55px;
+	}
+
+	#titulo-home
+	{
+		font-size: 55px;
+		margin-bottom: 50px;
+	}
+
+	#texto-final
+	{
+		position: absolute;
+		margin-top: -20em;
+		font-size: 20px;
+		margin-left: 150px;
+		margin-right: 200px;
+	}
+
+	.img-card
+	{
+		width: 50%;
+		height: auto;
+	}
+}
